@@ -1,0 +1,338 @@
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box; 
+    font-family:'Poppins',sans-serif; 
+}
+
+:root{
+  --primary:#159C88; --primary-dark:#128272; --primary-light:#E0F2F0;
+  --text:#333; --text-light:#777; --background:#f8f9fa; --white:#fff;
+  --border:#e0e0e0; --shadow:0 5px 15px rgba(0,0,0,0.08); --shadow-hover:0 8px 25px rgba(0,0,0,0.12);
+}
+
+body{
+  background:var(--background);
+  color:var(--text);
+  min-height:100vh;
+  display:flex;
+  background-image:linear-gradient(135deg,#f8f9fa 0%,#e9ecef 100%);
+}
+
+/* Sidebar */
+.sidebar{
+  width:250px; 
+  background:var(--white); 
+  box-shadow:var(--shadow);
+  padding:20px 0; 
+  display:flex; 
+  flex-direction:column; 
+  height:100vh; 
+  position:sticky; top:0;
+}
+
+.logo { 
+    display:flex; 
+    align-items:center; 
+    padding:0 20px 20px; 
+    border-bottom:1px solid var(--border); 
+    margin-bottom:20px;
+}
+
+.logo-icon { 
+    font-size:24px; 
+    margin-right:10px; 
+    color:var(--primary); 
+}
+
+.logo-text { 
+    font-size:22px; 
+    font-weight:700; 
+    color:var(--primary);
+}
+
+.nav-links { 
+    list-style:none; 
+    padding:0 15px; 
+}
+
+.nav-links li { 
+    margin-bottom:8px; 
+}
+
+.nav-links a {
+  display:flex;
+  align-items:center;
+  padding:12px 15px; 
+  text-decoration:none; 
+  color:var(--text); 
+  border-radius:8px; 
+  transition:all .25s;
+}
+
+.nav-links a i{ 
+    margin-right:12px; 
+    font-size:18px; 
+    width:24px; 
+    text-align:center; 
+}
+
+.nav-links a:hover, .nav-links a.active { 
+    background:var(--primary-light); 
+    color:var(--primary); 
+    font-weight:600; 
+}
+
+.user-info{ 
+    margin-top:auto; 
+    padding:20px; 
+    border-top:1px solid var(--border); 
+    display:flex;
+    align-items:center;
+}
+
+.user-avatar{ 
+    width:40px; 
+    height:40px; 
+    border-radius:50%; 
+    background:var(--primary); 
+    color:var(--white); 
+    display:flex; 
+    align-items:center; 
+    justify-content:center; 
+    font-weight:700; 
+    margin-right:10px; 
+}
+
+.user-details h4{ 
+    font-size:14px; 
+    margin-bottom:2px; 
+}
+
+.user-details p{ 
+    font-size:12px; 
+    color:var(--text-light); 
+}
+
+
+/* Main */
+.main{ 
+    flex:1; 
+    padding:30px; 
+    overflow-y:auto; 
+}
+
+header{ 
+    margin-bottom:30px; 
+}
+
+header h1{ 
+    font-size:28px; 
+    color:var(--primary); 
+    margin-bottom:5px; 
+}
+
+header p{ 
+    color:var(--text-light); 
+}
+
+/* Table wrapper */
+.feedback-table{ 
+    background:var(--white); 
+    padding:20px; 
+    border-radius:12px; 
+    box-shadow:var(--shadow); 
+}
+
+table{
+    width:100%; 
+    border-collapse:collapse; 
+}
+
+thead{ 
+    background:var(--primary-light); 
+}
+
+th{ 
+    padding:14px 12px; 
+    text-align:left; 
+    font-weight:600; 
+    color:var(--primary-dark); 
+    font-size:15px; 
+}
+
+td{ 
+    padding:12px; 
+    border-bottom:1px solid var(--border); 
+    color:var(--text); 
+    vertical-align:top; 
+}
+
+/* small notes and meta */
+
+.meta{ 
+    font-size:12px; 
+    color:var(--text-light); 
+    margin-top:6px; 
+}
+
+/* status badges */
+.status { 
+    padding:6px 12px; 
+    border-radius:18px; 
+    font-weight:600; 
+    display:inline-block; 
+    font-size:13px; 
+}
+
+/* Buttons */
+.btn-reply, .btn-view {
+  padding:8px 14px; 
+  border-radius:6px; 
+  background:var(--primary); 
+  color:white; 
+  border:none; 
+  cursor:pointer; 
+  font-size:14px;
+}
+
+.btn-view{ 
+    background:#6c757d; 
+}
+
+.btn-reply:hover{ 
+    background:var(--primary-dark); 
+    transform:translateY(-2px); 
+}
+
+.btn-view:hover{ 
+    transform:translateY(-2px); 
+}
+
+/* Modal */
+.modal { 
+    display:none; 
+    position:fixed; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%; 
+    background:rgba(0,0,0,0.45); 
+    align-items:center; 
+    justify-content:center; 
+    z-index:2000; 
+}
+
+.modal-content { 
+    width:90%; 
+    max-width:600px; 
+    background:var(--white); 
+    border-radius:12px; 
+    box-shadow:var(--shadow-hover); 
+    padding:20px; overflow:hidden; 
+}
+
+.modal-content h2 { 
+    margin:0 0 12px 0; 
+    color:var(--primary-dark); 
+}
+
+.modal-content label { 
+    display:block; 
+    margin:8px 0 6px; 
+    font-weight:600; 
+    color:var(--text); 
+}
+.donor-message { 
+    background:var(--primary-light); 
+    padding:12px; 
+    border-radius:8px; 
+    min-height:40px; color:var(--text); 
+    margin-bottom:10px;
+    border-left: 4px solid var(--primary);
+}
+
+.staff-message { 
+    padding:12px; 
+    border-radius:8px; 
+    min-height:40px; color:var(--text); 
+    margin-bottom:10px; 
+    background:#fffaf0; 
+    border-left:4px solid #ffdd99; 
+}
+
+textarea { 
+    width:100%; 
+    padding:12px; 
+    border:1px solid var(--border); 
+    border-radius:8px; 
+    min-height:110px; 
+    resize:vertical; 
+    font-size:15px; 
+    font-family:'Poppins',sans-serif; 
+}
+
+textarea[readonly] { 
+    background:#f5f5f5; 
+    color:#666; 
+}
+
+.modal-actions { 
+    display:flex; 
+    gap:10px; 
+    margin-top:12px; 
+}
+.btn-primary { 
+    padding:10px 16px; 
+    background:var(--primary); 
+    color:white; border:none; 
+    border-radius:8px; 
+    cursor:pointer; 
+}
+.btn-secondary { 
+    padding:10px 16px; 
+    background:#e0e0e0; 
+    color:#333; 
+    border:none; 
+    border-radius:8px; 
+    cursor:pointer; 
+}
+
+.btn-edit {
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.success {
+    display:none; 
+    margin-top:12px; 
+    padding:10px; 
+    background:#D4EDDA; 
+    color:#155724; 
+    border-left:5px solid #28a745; 
+    border-radius:6px; 
+}
+.error{ 
+    display:none; 
+    margin-top:12px; 
+    padding:10px; 
+    background:#F8D7DA; 
+    color:#721c24; 
+    border-left:5px solid #c82333; 
+    border-radius:6px; 
+}
+
+/* responsive */
+@media (max-width:900px){
+  .main{ padding:20px; }
+  table, thead, tbody, th, td, tr { display:block; }
+  thead{ display:none; }
+  tr{ margin-bottom:16px; background:var(--white); padding:12px; border-radius:8px; box-shadow:var(--shadow); }
+  td{ border:none; padding:6px 0; }
+}
