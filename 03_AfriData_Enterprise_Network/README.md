@@ -32,4 +32,4 @@ This directory contains all the evidence and documentation of the AfriData netwo
 * Documentation: The full group report covering the network architecture, security plan, and critical evaluation.
 * Network Diagrams: This contains the final Cisco Packet Tracer network topology diagram designed for AfriData.
 * Simulation Model: This contains the Cisco Packet Tracer simulation file.
-*(Note: Depending on your version of Packet Tracer, the file may experience rendering glitches; however, all routing configurations are evidenced by the CLI outputs documented in the report).*
+*(Note: Depending on your version of Packet Tracer, the file may experience rendering glitches; however, you can see the CLI outputs in the report which proves all the routing configurations.).*
