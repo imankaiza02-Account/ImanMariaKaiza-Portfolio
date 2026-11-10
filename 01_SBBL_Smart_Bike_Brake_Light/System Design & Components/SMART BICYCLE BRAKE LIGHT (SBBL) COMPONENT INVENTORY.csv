@@ -1,0 +1,7 @@
+﻿Name,Quantity,Component
+"USmart Bicycle Brake Light (SBBL) Microcontroller",1," Arduino Uno R3"
+"SLeft-Brake Pushbutton, SRight-Brake Pushbutton, SSBBL OFF Button",3," Pushbutton"
+"DLED Brake Light 1, DLED Brake Light 2, DLED Brake Light 3",3,"Red LED"
+"RResistor 3, RResistor 2, RResistor 1, R3",4,"1 kΩ Resistor"
+"SSlideswitch (motion state simulator)",1," Slideswitch"
+"RLDR or Photoresistor",1," Photoresistor"
