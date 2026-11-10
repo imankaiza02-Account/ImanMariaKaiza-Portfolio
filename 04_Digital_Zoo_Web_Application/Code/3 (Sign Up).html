@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <!--CSS STYLING-->
+    <link rel="stylesheet" href="3 (Sign Up).css">
+    <!--HEADING FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+    <!--BODY FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+             <div class="header-content">
+                <div class="logo-container">
+                    <img class="logo-image" src="Logo1.png" alt="Digital Zoo Logo" class="logo-image">
+                </div>
+                <nav>
+                        <ul>
+                            <li><a href="C:\Users\IMAN\Desktop\Desktop\Iman\Strathmore Documents\SEMESTER 3\WEB APPLICATION DEVELOPMENT\Practicals\LABS\WAD Lab Assignment\1 (HomePage).html">HOME</a></li>
+                            <li><a href="C:\Users\IMAN\Desktop\Desktop\Iman\Strathmore Documents\SEMESTER 3\WEB APPLICATION DEVELOPMENT\Practicals\LABS\WAD Lab Assignment\2 (Animal Classes).html">ANIMAL CLASSES</a></li>
+                            <li><a href="C:\Users\IMAN\Desktop\Desktop\Iman\Strathmore Documents\SEMESTER 3\WEB APPLICATION DEVELOPMENT\Practicals\LABS\WAD Lab Assignment\5 (Quiz).html">QUIZ</a></li>
+                            <li><a href="C:\Users\IMAN\Desktop\Desktop\Iman\Strathmore Documents\SEMESTER 3\WEB APPLICATION DEVELOPMENT\Practicals\LABS\WAD Lab Assignment\4 (Login Page).html">LOGIN</a></li>
+                            <li><a href="C:\Users\IMAN\Desktop\Desktop\Iman\Strathmore Documents\SEMESTER 3\WEB APPLICATION DEVELOPMENT\Practicals\LABS\WAD Lab Assignment\3 (Sign Up).html" class="active">SIGN UP</a></li>
+                        </ul>
+                    </nav>
+             </div>
+        </div>
+    </header>
+    <section class="introduction">
+        <h1>JOIN THE DIGITAL ZOO COMMUNITY</h1>
+        <h3>Join our conservation movement! Become a guardian of wildlife by signing up for weekly newsletters and joining a global family dedicated to protecting, conserving, and freeing animals worldwide.</h3>
+    </section>
+    <section class="form-section">
+        <form class="form" id="form">
+            <div class="form-item">
+                <label>First Name:</label>
+                <br>
+                <input type="text" name="fname" id="fname" class="fname" required>
+            </div>
+            <div class="form-item">
+                <label>Last Name:</label>
+                <br>
+                <input type="text" name="lname" id="lname" class="lname" required>
+            </div>
+            <div class="form-item">
+                <label>Date of Birth:</label>
+                <br>
+                <input type="date" name="dob" id="dob" class="dob" required>
+            </div>
+            <div class="form-item">
+                <label>Phone Number:</label>
+                <br>
+                <input type="number" name="phoneNumber" id="phoneNumber" class="phoneNumber">
+            </div>
+            <div class="form-item">
+                <label>Email:</label>
+                <br>
+                <input type="email" name="email" id="email" class="email" required>
+            </div>
+            <div class="form-item">
+                <label>Username:</label>
+                <br>
+                <input type="text" name="username" id="username" class="username" required>
+                <br>
+                <ul><li>Your Username should only contain letters</li></ul>
+            </div>
+            <div class="form-item">
+                <label>Password</label>
+                <br>
+                <input type="password" name="password" id="password" class="password" required>
+                <br>
+                <label>Create a strong password with:</label>
+                <ul><li>Upper and Lower Case Letters</li><li>Special Characters and Numbers</li></ul>
+            </div>
+            <div class="form-item">
+                <label>Confirm Your Password:</label>
+                <br>
+                <input type="password" name="confirmPass" id="confirmPass" class="confirmPass" required>
+            </div>
+            <div class="form-item">
+                <br>
+                <select name="security" id="security" class="security">
+		        <option>--Select a Security Question--</option>
+		        <option value="option1">What is your favourite pet's name?</option>
+		        <option value="option2">What is your favourite animal to ever exist?</option>
+		        <option value="option3">How many pet's do you have?</option>
+	            </select>
+            </div>
+            <div class="form-item option1" id="option1">
+                <br>
+                <label>What is your favourite pet's name?</label>
+                <br>
+                <input type="text" name="securityAns1" id="securityAns1" class="securityAns1">
+            </div>
+            <div class="form-item option2" id="option2">
+                <label>What is your favourite animal to ever exist?</label>
+                <br>
+                <input input type="text" name="securityAns2" id="securityAns2" class="securityAns2">
+            </div>
+            <div class="form-item option3" id="option3">
+                <label>How many pet's do you have?</label>
+                <br>
+                <input type="text" name="securityAns3" id="securityAns3" class="securityAns3">
+            </div>
+            <div class="form-item">
+                <br>
+                <input type="checkbox" name="T&C" id="T&C" class="T&C" required>
+                <label>Agree to the <a href="C:\Users\IMAN\Desktop\Desktop\Iman\Strathmore Documents\SEMESTER 3\WEB APPLICATION DEVELOPMENT\Practicals\LABS\WAD Lab Assignment\T&C.html" target="_blank">Terms and Conditions</a></label>
+            </div>
+            <div class="form-item">
+                <br>
+                <button type="submit" name="submit" id="submit" class="submit">JOIN</button>
+            </div>
+        </form>
+    </section>
+    <script src="3 (Sign Up).js"></script>
+</body>
+</html>

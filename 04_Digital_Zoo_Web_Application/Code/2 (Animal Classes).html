@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Classes</title>
+    <!--CSS STYLING-->
+    <link rel="stylesheet" href="2 (Animal Classes).css">
+    <!--HEADING FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+    <!--BODY FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+             <div class="header-content">
+                <div class="logo-container">
+                    <img class="logo-image" src="Logo1.png" alt="Digital Zoo Logo" class="logo-image">
+                </div>
+                <nav>
+                        <ul>
+                            <li><a href="C:\Users\IMAN\Desktop\Desktop\Iman\Strathmore Documents\SEMESTER 3\WEB APPLICATION DEVELOPMENT\Practicals\LABS\WAD Lab Assignment\1 (HomePage).html">HOME</a></li>
+                            <li><a href="C:\Users\IMAN\Desktop\Desktop\Iman\Strathmore Documents\SEMESTER 3\WEB APPLICATION DEVELOPMENT\Practicals\LABS\WAD Lab Assignment\2 (Animal Classes).html" class="active">ANIMAL CLASSES</a></li>
+                            <li><a href="C:\Users\IMAN\Desktop\Desktop\Iman\Strathmore Documents\SEMESTER 3\WEB APPLICATION DEVELOPMENT\Practicals\LABS\WAD Lab Assignment\5 (Quiz).html">QUIZ</a></li>
+                            <li><a href="C:\Users\IMAN\Desktop\Desktop\Iman\Strathmore Documents\SEMESTER 3\WEB APPLICATION DEVELOPMENT\Practicals\LABS\WAD Lab Assignment\4 (Login Page).html">LOGIN</a></li>
+                            <li><a href="C:\Users\IMAN\Desktop\Desktop\Iman\Strathmore Documents\SEMESTER 3\WEB APPLICATION DEVELOPMENT\Practicals\LABS\WAD Lab Assignment\3 (Sign Up).html">SIGN UP</a></li>
+                        </ul>
+                    </nav>
+             </div>
+        </div>
+    </header>
+    <section>
+        <div class="heading"><h1>ANIMAL CLASSES</h1></div>
+        <div class="introduction">
+            <h4>Dive into the fascinating world of animal classification! From the mighty mammals to the incredible birds, each class represents unique adaptations and evolutionary marvels.</h4>
+            <h3>CLICK ON ANY CLASS BELOW TO DISCOVER THE DIVERSE CREATURES THAT INHABITAT OUR DIGITAL ZOO</h3>
+        </div>
+    </section>
+    <section class="section1">
+        <div class="container">
+            <div class="item">
+                <a href="javascript:void(0);" onclick="DisplaySection('mammals-section')"><img src="Mammal-Icon.png"></a>
+                <h1>MAMMALS</h1>
+                <p>Mammals are warm-blooded vertebrates, typically covered in hair or fur, who nourish their young with milk. They possess a highly developed brain and a wide range of complex behaviours. See some of the mammals in our collection below.</p>
+            </div>
+            <div class="item">
+                <a href="javascript:void(0);" onclick="DisplaySection('amphibians-section')"><img src="Amphibian-Icon.png"></a>
+                <h1>AMPHIBIANS</h1>
+                <p>Amphibians are cold-blooded vertebrates that typically begin their lives as aquatic larvae and later transform into terrestrial adults. They have moist, permeable skin that can absorb water and oxygen. See some of the amphibians in our collection below.</p>
+            </div>
+            <div class="item">
+                <a href="javascript:void(0);" onclick="DisplaySection('birds-section')"><img src="Bird-Icon.png"></a>
+                <h1>BIRDS</h1>
+                <p>Birds are feathered, winged, warm-blooded vertebrates that lay hard-shelled eggs. They have lightweight skeletons and a highly efficient respiratory system that aids in flight. See some of the birds in our collection below.</p>
+            </div>
+        </div>
+    </section>
+    <section id="mammals-section">
+        <div><h1>MAMMALS</h1></div>
+        <div class="animal-container">
+            <div class="animal-item">
+                <h2>LION</h2>
+                <img src="Lion2.jpg">
+                <p>Lions are highly social big cats, a trait uncommon among felines, living in structured groups called prides typically consisting of related females, their cubs, and a few males. They are apex predators native to sub-Saharan Africa, primarily inhabiting savannas and grasslands where they hunt large ungulates. The male's impressive mane provides protection during fights over territory.</p>
+                <p class="funFact">FUN FACT: A lion's powerful roar can reach up to 114 decibels and can be heard from up to 8 kilometers (5 miles) away, primarily used to establish territory and communicate with other pride members.</p>
+                <h5>LISTEN TO THE LION'S ROAR:</h5>
+                <audio id="LionAudio" src="AUDIO_Files/Lion.mp3" preload="auto" controls></audio>
+            </div>
+            <div class="animal-item">
+                <h2>HOWLER MONKEY</h2>
+                <img src="HolwerMonkeys.jpg">
+                <p>Found throughout the forests of Central and South America, these are diurnal monkeys known for their specialized hyoid bone that acts as a resonating chamber. They rarely descend to the ground, spending most of their time in the high canopy where they feed mainly on leaves and fruit. They are important seed dispersers in their ecosystem.</p>
+                <p class="funFact">FUN FACT: Their loud, guttural howls are among the loudest sounds produced by any land animal. They use these calls, which can travel for miles, to announce their location and defend their territory against rival groups.</p>
+                <h5>LISTEN TO THE DEEP HOWLS OF THE HOWLER MONKEY:</h5>
+                <audio id="Howler_MonkeyAudio" src="AUDIO_Files/HowlerMonkey.mp3" preload="auto" controls></audio>
+            </div>
+            <div class="animal-item">
+                <h2>RED FOX</h2>
+                <img src="Fox2.jpg">
+                <p>The red fox is the most widespread and largest of the true foxes, recognized by its russet fur, white underbelly, and distinctive bushy, white-tipped tail. They are solitary and nocturnal hunters with keen senses, adapting successfully to diverse habitats from forests and mountains to suburban areas and cities. Their diet is incredibly varied, including rodents, fruit, and insects.</p>
+                <p class="funFact">FUN FACT: Red foxes possess a remarkable ability to use the Earth's magnetic field as a targeting system when pouncing on prey, consistently making their most successful leaps in a north-easterly direction.</p>
+                <h5>LISTEN TO THE FOX'S SCREECH:</h5>
+                <audio id="Red_FoxAudio" src="AUDIO_Files/RedFox.mp3" preload="auto" controls></audio>
+            </div>
+        </div>
+    </section>
+    <section id="amphibians-section">
+        <div><h1>AMPHIBIANS</h1></div>
+        <div class="animal-container">
+            <div class="animal-item">
+                <h2>FOWLER'S TOAD</h2>
+                <img src="Fowler-Toad.jpg">
+                <p>This medium-sized toad is native to eastern North America, preferring habitats with loose, sandy soil where it can easily burrow to escape predators and extreme temperatures. It is primarily nocturnal and often emerges after sunset to feed on insects and small invertebrates. Despite their common name, they are considered an important part of pest control in agricultural areas.</p>
+                <p class="funFact">FUN FACT: When seriously threatened or attacked by a predator, the Fowler's Toad can secrete a white, mildly toxic milky substance from the parotoid glands located behind its eyes. This substance is foul-tasting and irritating, discouraging most potential threats.</p>
+                <h5>HERE CALL OF THE FOWLER'S TOAD:</h5>
+		        <audio id="F_ToadAudio" src="AUDIO_Files/FowlersToad.mp3" preload="auto" controls></audio>
+            </div>
+            <div class="animal-item">
+                <h2>GREEN TREE FROG</h2>
+                <img src="Green-Tree-Frog.jpg">
+                <p>A relatively large, vibrant green tree frog found in the humid regions of the southeastern United States. They are excellent climbers, spending most of their lives in trees and shrubs near permanent water sources. They are nocturnal hunters, often using their brilliant green color for camouflage among the leaves.</p>
+                <p class="funFact">FUN FACT: These frogs have specialized, highly sticky toe pads covered in mucous glands, which allow them to firmly grip and climb slick vertical surfaces, including windows and smooth bark, with impressive dexterity.</p>
+                <h5>LISTEN TO THE CROAKS OF THE GREEN TREE FROG:</h5>
+	            <audio id="GT_FrogAudio" src="AUDIO_Files/GreenTreeFrog.mp3" preload="auto" controls></audio>
+            </div>
+            <div class="animal-item">
+                <h2>TIGER SALAMANDER</h2>
+                <img src="Tiger-Salamander.jpg">
+                <p>The Tiger Salamander is the largest land-dwelling salamander in the world, recognizable by its stocky build and striking black and yellow or olive-green pattern. They are highly fossorial, meaning they spend most of their time living underground in burrows, emerging primarily to breed or forage. They are found across much of North America.</p>
+                <p class="funFact">FUN FACT: Under laboratory conditions, these salamanders have the extraordinary ability to completely regenerate lost limbs, parts of their brain, and even damaged portions of their spinal cord without scarring.</p>
+                <h5>LISTEN TO THE VOCALIZATION OF THE SALAMANDER, IT SOUND LIKE WATER DROPLETS:</h5>
+		        <audio id="Tiger_SalamanderAudio" src="AUDIO_Files/TigerSalamander.mp3" preload="auto" controls></audio>
+            </div>
+        </div>
+    </section>
+    <section id="birds-section">
+        <div><h1>BIRDS</h1></div>
+        <div class="animal-container">
+            <div class="animal-item">
+                <h2>NORTHERN MOCKING BIRD</h2>
+                <img src="Northern-MockingBird.jpg">
+                <p>This medium-sized songbird is an omnivore found across North America, famous for its long, complex, and incredibly varied songs. They often sing late into the night and can sometimes be aggressive in defending their nesting territory against other birds, cats, and even people.</p>
+                <p class="funFact">FUN FACT: The Northern Mockingbird is a true vocal master; a single male can learn and accurately imitate the calls, songs, and alarms of up to 200 different bird species, often stringing several different calls into one continuous performance.</p>
+                <h5>HERE THE VOCALS OF THE NORTHERN MOCKINGBIRD:</h5>
+		        <audio id="N_MockingBirdAudio" src="AUDIO_Files/NorthernMockingbird.mp3" preload="auto" controls></audio>
+            </div>
+            <div class="animal-item">
+                <h2>LYREBIRD</h2>
+                <img src="LyreBird.jpg">
+                <p>The Lyrebird is a ground-dwelling Australian bird, best known for its amazing ability in vocal mimicry and its spectacular tail plumage. The male uses his elaborate, fern-like tail in courtship displays, combining it with an astounding performance of imitated sounds from its environment.</p>
+                <p class="funFact">FUN FACT: The Lyrebird is a ground-dwelling Australian bird, best known for its amazing ability in vocal mimicry and its spectacular tail plumage. The male uses his elaborate, fern-like tail in courtship displays, combining it with an astounding performance of imitated sounds from its environment.</p>
+                <h5>LISTEN TO THE VOCAL MIMICRY OF THE LYREBIRD:</h5>
+	            <audio id="LyreBirdAudio" src="AUDIO_Files/Lyrebird.mp3" preload="auto" controls></audio>
+            </div>
+            <div class="animal-item">
+                <h2>LAUGHING KOOKABURRA</h2>
+                <img src="Laughing-Kookaburra.jpg">
+                <p>As the largest member of the kingfisher family, the Kookaburra is an iconic Australian bird. It's a stout, carnivorous bird that feeds on small snakes, lizards, insects, and rodents. They live in family groups and are mainly known for their unmistakable, chorus-like territorial call.</p>
+                <p class="funFact">FUN FACT: The famous "laughing" call is a raucous, rollicking chorus that is often performed by a whole family group at dawn and dusk. This collective "cackle" serves as a way to delineate and advertise their territorial boundaries.</p>
+                <h5>LISTEN TO THE "LAUGHING" SOUNDS MADE BY THE KOOKABURRA:</h5>
+		        <audio id="Laughing_KookaburraAudio" src="AUDIO_Files/LaughingK.mp3" preload="auto" controls></audio>
+            </div>
+        </div>
+    </section>
+    <script src="2 (Animal Classes).js"></script>
+</body>
+</html>

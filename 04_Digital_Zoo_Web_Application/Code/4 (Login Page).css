@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Font Styling*/
+* {
+    font-family: 'Nunito', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Slackey', cursive;
+
+
+}
+h1 {
+    color: #0EADE2;
+    text-align: center;
+    padding: 10px 0;
+}
+/*Heading Section Styling*/
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header {
+    background-color: #2E8B57;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    top: 0;
+    z-index: 100;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Logo Styles*/
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo-image {
+    height: 100px;
+    width: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.logo-container:hover {
+    transform: translateY(-1px);
+}
+/*Navigation*/
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+nav li {
+    margin-left: 20px;
+}
+nav a {
+    font-family: 'Slackey', cursive;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 2px 0;
+    position: relative;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #793409;
+    /*When the cursor hovers over the values it will change color*/
+}
+nav a.active {
+    color: #793409;
+    /*The page we are on will have this color on the navigation bar*/
+}
+/*Body Section Styling*/
+body {
+    background-color: #D3FFE9;
+}
+h3 {
+    text-align: center;
+    font-size: 1rem;
+    color: #793409;
+    margin-bottom: 25px;
+}
+/*FORM STYLING*/
+.form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.form-item {
+    margin-bottom: 1.5rem;
+}
+label {
+    font-weight: bold;
+    color: #2E8B57;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+input:focus {
+    border-color: #2E8B57;
+    outline: none;
+}
+button[type="submit"] {
+    background: #2E8B57;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+button[type="submit"]:hover {
+    background: #236b47;
+}

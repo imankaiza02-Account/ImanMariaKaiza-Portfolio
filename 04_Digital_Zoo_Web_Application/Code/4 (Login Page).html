@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!--CSS STYLING-->
+    <link rel="stylesheet" href="4 (Login Page).css">
+    <!--HEADING FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+    <!--BODY FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+             <div class="header-content">
+                <div class="logo-container">
+                    <img class="logo-image" src="Logo1.png" alt="Digital Zoo Logo" class="logo-image">
+                </div>
+                <nav>
+                        <ul>
+                            <li><a href="C:\Users\IMAN\Desktop\Desktop\Iman\Strathmore Documents\SEMESTER 3\WEB APPLICATION DEVELOPMENT\Practicals\LABS\WAD Lab Assignment\1 (HomePage).html">HOME</a></li>
+                            <li><a href="C:\Users\IMAN\Desktop\Desktop\Iman\Strathmore Documents\SEMESTER 3\WEB APPLICATION DEVELOPMENT\Practicals\LABS\WAD Lab Assignment\2 (Animal Classes).html">ANIMAL CLASSES</a></li>
+                            <li><a href="C:\Users\IMAN\Desktop\Desktop\Iman\Strathmore Documents\SEMESTER 3\WEB APPLICATION DEVELOPMENT\Practicals\LABS\WAD Lab Assignment\5 (Quiz).html">QUIZ</a></li>
+                            <li><a href="C:\Users\IMAN\Desktop\Desktop\Iman\Strathmore Documents\SEMESTER 3\WEB APPLICATION DEVELOPMENT\Practicals\LABS\WAD Lab Assignment\4 (Login Page).html" class="active">LOGIN</a></li>
+                            <li><a href="C:\Users\IMAN\Desktop\Desktop\Iman\Strathmore Documents\SEMESTER 3\WEB APPLICATION DEVELOPMENT\Practicals\LABS\WAD Lab Assignment\3 (Sign Up).html">SIGN UP</a></li>
+                        </ul>
+                    </nav>
+             </div>
+        </div>
+    </header>
+    <section class="introduction">
+        <h1>WELCOME DIGITAL ZOO MEMBER</h1>
+        <h3>Return to the Adventure of Animal Exploration</h3>
+    </section>
+    <section class="form-section">
+        <form class="form" id="form">
+            <div class="form-item">
+                <label>Username:</label>
+                <br>
+                <input type="text" name="username" id="username" class="username" required>
+            </div>
+            <div class="form-item">
+                <label>Password</label>
+                <br>
+                <input type="password" name="password" id="password" class="password" required>
+            </div>
+            <div class="form-item">
+                <button type="submit" name="login" id="login" class="login">LOGIN</button>
+            </div>
+        </form>
+    </section>
+    <script>
+        form=document.getElementById('form');
+        username=document.getElementById('username');
+        password=document.getElementById('password');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            if (username.value && password.value) {
+                alert ("Welcome to the Zoo!!!");
+            }
+        });
+    </script>
+</body>
+</html>
