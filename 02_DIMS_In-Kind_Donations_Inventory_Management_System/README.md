@@ -32,4 +32,4 @@ This directory contains all the evidence and documentation of the DIMS system.
 * This is split into two subfolders. DIMS Project Code contains the full source code for the system (PHP, HTML, JS, CSS), excluding external libraries. DIMS SQL Code contains the exported MySQL database.
 * Documentation: The full engineering report of the In-Kind Donations Inventory Management System (DIMS).
 * Images: This contains all the system diagrams and the User Interface (UI) wireframes.
-* System Walkthrough Videos: This contains a zip file that houses screen recordings of the operations of DIMS.
+* System Walkthrough Videos: This contains two videos that demonstrate the operations of the system.
