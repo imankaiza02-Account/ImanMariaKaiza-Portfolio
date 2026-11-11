@@ -14,3 +14,23 @@ I am immensely passionate about solving real-world problems within my community 
 
 ## Feature Projects
 ### 1. [Smart Bicycle Brake Light (SBBL)](./01_SBBL_Smart_Bike_Brake_Light/)
+SBBL is an intelligent, Arduino-based electronic system simulated in Tinkercad. It features direct mechanical brake detection, automatic ambient-light brightness adjustment (using an LDR and PWM control), AVR power management (low-power sleep modes), and an LDR sensor fault-detection and fallback mechanism.
+* The following skills were demonstrated: Embedded C++, Hardware Logic, State Machine Operation, and Circuit Simulation.
+
+### 2. [Donation Inventory Management System (DIMS)](./02_DIMS_In-Kind_Donations_Inventory_Management_System/)
+DIMS is a full-stack web application designed to manage in-kind donations for local community donation centres. It features role-based (Donor, Staff/Volunter, and Admin) access, QR code generation and scanning for inventory tracking and processing, and an automated email verification.
+* The following skills were demonstrated: Backend Architecture (PHP), Database Design (MySQL using XAMPP), QR Code Integrations, and System Integrations.
+
+### 3. [AfriData Enterprise Network Design](./03_AfriData_Enterprise_Network/)
+This is a comprehensive network infrastructure design for a distributed enterprise (Nairobi, Kisumu, Mombasa). The project involved designing a hybrid star-mesh topology, configuring OSPF dynamic routing, implementing VLSM subnetting, and proposing a layered security architecture.
+* The following skills were demonstrated: Cisco Packet Tracer, Network Routing, Network Security, and Protocol and Model Analysis.
+
+### 4. [Digital Zoo: Interactive Web Application](./04_Digital_Zoo_Web_Application/)
+This is a fully functional, multi-page frontend web application that was inspired by ethical wildlife education; it allows users to explore animal classes, listen to integrated audio, and play a dynamic personality quiz to discover their inner animal.
+* The following skills were demonstrated: Frontend Development (HTML, CSS, JS), DOM Manipulation, Form Validation, and HTML Audio API.
+
+## Education
+* Diploma in Business Information Technology | *Strathmore University, Nairobi, Kenya* 
+* Secondary Education (AS-Levels) | *Mathematics, Physics, Chemistry, Economics*
+
+*Note: All projects include full source code, engineering reports and technical documents within their respective directories.*
